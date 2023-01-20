@@ -12,22 +12,26 @@
 </head>
 <body>
     <header class="header">
-        
+        <div class="container header__container">
         <img 
         src="Imgs/logologo.svg" 
         alt="Logo of the netbook enterprise, its a circle crossed diagonally on the middle having one half orange and other yellow"
         width="145" height="35">
         <nav class="header__nav"><ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Events</a></li>
         </ul></nav>
     
-        <div>
-        <input type="search"/>
+        <div class="header__actions">
+            <form action="" class="header__search">
+                <img src="imgs/Icon-search.svg" alt="Magnify glass icon for search" width="16" height="16">
+        <input type="search" name="Search" id="Search" placeholder="Search Here..." aria-label="search"/>
+    </form>
         <a href="/login" class="btn">Log in</a>
     </div>
+</div>
     </header>
     <main>
         <section class="hero"><section>
