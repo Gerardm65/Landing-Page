@@ -56,6 +56,7 @@ html{
  :root{
     --color-primary: #217bf4;
     --color-secondary: #ffaf2e;
+    --color-white: #fff;
     --color-text: #0a093d;
     --full-width:1170px;
 }
@@ -64,13 +65,28 @@ body {
     color: var(--color-text);
     font-family: 'Inter', sans-serif;
 }
+.btn{
+display: inline-flex;
+text-decoration: none;
+background-color: var(--color-primary);
+color: var(--color-white);
+height: 48px;
+padding: 0 40px;
+align-items: center;
+border-radius: 1rem;
+}
 .header{
 width: var(--full-width);
 margin: 0 auto;
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 145px 1fr auto;
+gap: 4.5rem;
+align-items: center;
 }
-.header__nav{
-    display: flex;
-    gap: 4.5rem;
+.header__nav ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+
 }
