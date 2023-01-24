@@ -68,6 +68,7 @@ body {
 h1, h2, h3, h4, h5, h6{
   color: var(--color-heading);
 }
+/**/
 a {
   text-decoration: none;
   color: var(--color-text);
@@ -85,6 +86,9 @@ border-radius: 1rem;
 .container{
   width: var(--full-width);
   margin: 0 auto;
+}
+.prime{
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 }
 .header{
   border-bottom: solid 1px var(--color-primary-10);
@@ -124,4 +128,9 @@ border-radius: 1rem;
 .header__search input{
 all: unset;
 width: 7.5rem;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
 }
