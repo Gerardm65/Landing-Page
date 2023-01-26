@@ -68,6 +68,7 @@ body {
 h1, h2, h3, h4, h5, h6{
   color: var(--color-heading);
 }
+
 /**/
 a {
   text-decoration: none;
@@ -165,4 +166,64 @@ width: 7.5rem;
 .hero__cta{
   display: flex;
   gap: 1rem;
+}
+.whats-netbooks{
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin: 5.375rem auto;
+}
+.whats-netbooks__content h2{
+  font-size: 1.125rem;
+  color: var(--color-primary)
+  
+}
+.whats-netbooks__content h3{
+  font-size: 2.25rem;
+  line-height:1.33 ;
+  margin-bottom:1rem;
+}
+.whats-netbooks__content ul{
+  font-size: 1.125rem;
+  list-style: none;
+  padding-left: 0;
+}
+.whats-netbooks__content li{
+  position: relative;
+  padding-left: 2rem;
+}
+/*todo: find a better way to add border color*/
+.whats-netbooks__content li::before{
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  border: solid 4px #e9f2fe;
+  box-sizing: content-box;
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.whats-netbooks__content p{
+  margin-bottom: 1rem;
+}
+.whats-netbooks__images{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  
+  flex-shrink: 0;
+  flex-basis: 564px;
+  
+}
+.whats-netbooks__images img{
+  border-radius: 1rem;
+}
+.whats-netbooks__video{
+  grid-row:1/-1;
 }
