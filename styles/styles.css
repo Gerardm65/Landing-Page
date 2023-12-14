@@ -83,6 +83,11 @@ height: 48px;
 padding: 0 40px;
 align-items: center;
 border-radius: 1rem;
+box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25)
+
+}
+.btn svg {
+  margin-left: 1rem;
 }
 .btn__secondary{
   background-color: transparent;
@@ -173,12 +178,14 @@ width: 7.5rem;
   gap: 12.5rem;
   margin: 5.375rem auto;
 }
-.whats-netbooks__content h2{
+h2.section__title{
   font-size: 1.125rem;
   color: var(--color-primary)
   
 }
-.whats-netbooks__content h3{
+p.section__subtitle{
+  color: var(--color-heading);
+  font-weight: bold;
   font-size: 2.25rem;
   line-height:1.33 ;
   margin-bottom:1rem;
@@ -231,6 +238,7 @@ width: 7.5rem;
   display: grid;
   grid-template-columns: 21.25rem 21.25rem 1fr;
   gap: 1.5rem;
+  align-items: center;
 }
 .achievement .card{
   padding: 3rem 1.125rem 2.5rem 2.5rem;  
@@ -280,6 +288,16 @@ box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25)
 
 .achievement .card__content{
   margin-bottom: 2rem;
+}
+.achievement__content{
+  width: 380px;
+  margin-inline-start: auto;
+  
+  
+}
+.achievement__content p:not(.section__subtitle){
+  margin-bottom: 2rem;
+  
 }
 .card.rating .card__title, .card.awards .card__title{
   display: flex;
