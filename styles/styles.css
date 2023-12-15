@@ -307,6 +307,11 @@ stroke: var(--color-primary);
   margin-bottom: 2rem;
   
 }
+.community {
+  background: linear-gradient(0deg, rgba(241, 246, 253, 0.00) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFF 100%);
+
+
+}
 
 .community__items{
 display: grid;
@@ -314,10 +319,19 @@ grid-template-columns: repeat(auto-fill, minmax(522px, 1fr));
 gap: 2.5rem;
 
 }
-.community__members{
-  border: solid 1px lightblue;
-  padding: 1.5rem;
+.community__cards{
+  padding: 2.5rem 4rem 4rem 2.5rem;
+  background-color: var(--color-white);
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.community__card-icon{
+  flex-shrink: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
