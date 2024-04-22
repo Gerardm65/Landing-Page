@@ -352,8 +352,7 @@ gap: 2.5rem;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 .team{
-  margin: auto;
-  margin-top: 8rem;
+  margin: 6rem auto;
 }
 .team__title{
   margin-bottom: 2rem;
@@ -392,4 +391,55 @@ h3.team__subtitle{
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+.team__card--section{
+  display: flex;
+  margin:3rem auto;
+  justify-content: center;
+}
+.team__card{
+  width: 17.5rem;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to bottom, rgba(185, 185, 185, 0.12), rgba(94, 94, 94, 0.16)) border-box;
+  background-color: var(--color-white);
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px transparent;  
+  margin-left: 1.875rem;
+  align-items: center;
+  
+}
+.team__member--avatar{
+  position: relative;
+  display: inline-block;
+  margin: 2rem 0  1rem 0rem;
+  
+
+
+}
+.team__frame--member, .team__frame--background{
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.team__frame--check{
+  position: absolute;
+  left: 50%;
+  
+  transform: translate(-50%, -90%);
+}
+.team__member--name{
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  
+}
+.team__member--username{
+  margin-bottom: 1rem;
+}
+
+
 
